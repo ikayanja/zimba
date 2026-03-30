@@ -1,0 +1,40 @@
+/components
+  /common
+    Button.tsx
+    Input.tsx
+    Avatar.tsx
+    JobCard.tsx
+    MasonCard.tsx
+  /molecules
+/screens
+  AuthLoadingScreen.tsx
+  SignInScreen.tsx
+  SignUpScreen.tsx
+  HomeScreen.tsx
+  PostJobScreen.tsx
+  JobsScreen.tsx
+  ChatScreen.tsx
+  ProfileScreen.tsx
+/navigation
+  AppNavigator.tsx
+  AuthNavigator.tsx
+  MainTabNavigator.tsx
+/services
+  /firebase
+    firebaseConfig.ts
+    auth.ts
+    firestore.ts
+    storage.ts
+    notifications.ts
+/store
+  authStore.ts
+  jobStore.ts
+/hooks
+  useAuth.ts
+  useJobs.ts
+  useChat.ts
+/utils
+  geolocation.ts
+  validation.ts
+  constants.ts
+  models.ts
