@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { User } from "firebase/auth";
+import type { AppUser as User } from "../services/supabase/config";
 
 type AuthState = {
   user: User | null;

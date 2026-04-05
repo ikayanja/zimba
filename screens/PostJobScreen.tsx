@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { View, Text, TextInput, Button, Alert } from "react-native";
-import { createJob } from "../services/firebase/firestore";
-import { uploadImage } from "../services/firebase/storage";
+import { createJob } from "../services/supabase/data";
+import { uploadImage } from "../services/supabase/storage";
 import * as ImagePicker from "expo-image-picker";
 import { useAuth } from "../hooks/useAuth";
 

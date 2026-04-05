@@ -6,6 +6,7 @@ export type UserProfile = {
   email: string;
   phone: string;
   location: string;
+  description?: string;
   avatar?: string;
   role: UserRole;
   skills?: string[];

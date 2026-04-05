@@ -1,4 +1,5 @@
 import { View, Text, Pressable, StyleSheet, Image } from "react-native";
+import { theme } from "../../constants/theme";
 
 type JobCardProps = {
   job: any;
@@ -19,9 +20,17 @@ export default function JobCard({ job, onPress }: JobCardProps) {
 }
 
 const styles = StyleSheet.create({
-  container: { flexDirection: "row", borderRadius: 12, borderWidth: 1, padding: 12, marginVertical: 8, backgroundColor: "#fff" },
+  container: {
+    flexDirection: "row",
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    padding: 12,
+    marginVertical: 8,
+    backgroundColor: theme.colors.surface,
+  },
   textWrapper: { flex: 1, paddingRight: 8 },
-  title: { fontWeight: "600", fontSize: 16 },
-  meta: { marginTop: 6, color: "#555" },
+  title: { fontWeight: "600", fontSize: 16, color: theme.colors.text },
+  meta: { marginTop: 6, color: theme.colors.textMuted },
   image: { width: 70, height: 70, borderRadius: 8 },
 });
